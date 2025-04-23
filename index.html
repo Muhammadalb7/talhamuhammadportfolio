@@ -1,0 +1,1120 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <meta name="description" content="Muhammad Talha - Professional Portfolio. Pharmacy professional with 2+ years of experience in pharmaceutical sales, clinical research, and hospital operations.">
+  <meta name="keywords" content="Muhammad Talha, Pharmacy, Pharmaceutical Sales, Clinical Research, Hospital Operations, Portfolio">
+  <meta name="author" content="Muhammad Talha">
+  <meta property="og:title" content="Muhammad Talha - Professional Portfolio">
+  <meta property="og:description" content="Pharmacy professional with expertise in pharmaceutical sales, clinical research, and hospital operations.">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Muhammad Talha - Professional Portfolio">
+  <meta name="twitter:description" content="Pharmacy professional with expertise in pharmaceutical sales, clinical research, and hospital operations.">
+  <title>
+   MUHAMMAD TALHA - Professional Portfolio
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&amp;display=swap" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <script src="https://web3forms.com/client/script.js" async defer></script>
+  <style>
+   body {
+      font-family: "Poppins", sans-serif;
+      transition: background-color 0.5s ease, color 0.5s ease;
+      background-color: #ffffff;
+      color: #1e293b;
+    }
+    a, button {
+      transition: color 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+    }
+    a:hover, button:hover {
+      color: #6366f1;
+      background-color: #e0e7ff;
+      box-shadow: 0 10px 15px -3px rgba(99, 102, 241, 0.4), 0 4px 6px -2px rgba(99, 102, 241, 0.3);
+    }
+    /* Smooth fade and scale on hover for skill cards */
+    .skill-card {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      background-color: #eef2ff;
+      border-radius: 1rem;
+      padding: 2rem;
+      box-shadow: 0 1px 3px rgba(99, 102, 241, 0.1);
+      cursor: pointer;
+    }
+    .skill-card:hover {
+      transform: translateY(-8px) scale(1.05);
+      box-shadow: 0 20px 25px -5px rgba(99, 102, 241, 0.6), 0 10px 10px -5px rgba(99, 102, 241, 0.3);
+      z-index: 10;
+      background-color: #c7d2fe;
+    }
+    /* Project card hover effect */
+    .project-card {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      border-radius: 1rem;
+      padding: 2rem;
+      box-shadow: 0 1px 3px rgba(99, 102, 241, 0.1);
+      cursor: pointer;
+      background-color: #ffffff;
+    }
+    .project-card:hover {
+      transform: translateY(-8px) scale(1.03);
+      box-shadow: 0 25px 30px -10px rgba(99, 102, 241, 0.6), 0 10px 15px -5px rgba(99, 102, 241, 0.4);
+      z-index: 10;
+      background-color: #e0e7ff;
+    }
+    /* Transition for buttons and links */
+    a, button {
+      transition: all 0.3s ease;
+    }
+    a:hover, button:hover {
+      color: #4f46e5;
+      background-color: #c7d2fe;
+      box-shadow: 0 10px 15px -3px rgba(99, 102, 241, 0.5), 0 4px 6px -2px rgba(99, 102, 241, 0.3);
+    }
+    .btn:hover {
+      background-color: #0056b3;
+    }
+
+    /* Contact Form Styles */
+    .contact {
+      padding: 80px 0;
+      background-color: #f8f9fa;
+    }
+
+    .contact h2 {
+      text-align: center;
+      margin-bottom: 40px;
+      color: #333;
+    }
+
+    .contact-container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 0 20px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+    }
+
+    .contact-form {
+      background: white;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 8px;
+      color: #333;
+      font-weight: 500;
+    }
+
+    .form-group input,
+    .form-group textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      font-size: 16px;
+    }
+
+    .form-group textarea {
+      resize: vertical;
+    }
+
+    .contact-info {
+      padding: 30px;
+    }
+
+    .contact-info h3 {
+      color: #333;
+      margin-bottom: 20px;
+    }
+
+    .contact-details {
+      margin-top: 30px;
+    }
+
+    .contact-details p {
+      margin-bottom: 15px;
+      color: #666;
+    }
+
+    .contact-details i {
+      margin-right: 10px;
+      color: #007bff;
+    }
+
+    @media (max-width: 768px) {
+      .contact-container {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .contact-form input:focus, .contact-form textarea:focus {
+      border-color: #6366f1;
+      box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.2);
+    }
+
+    .loading-spinner {
+      animation: spin 1s linear infinite;
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+  </style>
+ </head>
+ <body class="bg-white text-gray-900">
+  <!-- Header -->
+  <header class="bg-indigo-700 text-white fixed w-full z-50 shadow">
+   <div class="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
+    <a class="text-3xl font-bold tracking-wide hover:text-indigo-300 transition" href="#home">
+     MUHAMMAD TALHA
+    </a>
+    <nav>
+     <ul class="hidden md:flex space-x-10 font-semibold">
+      <li><a class="hover:text-indigo-300 transition" href="#home">Home</a></li>
+      <li><a class="hover:text-indigo-300 transition" href="#about">About</a></li>
+      <li><a class="hover:text-indigo-300 transition" href="#experience">Experience</a></li>
+      <li><a class="hover:text-indigo-300 transition" href="#skills">Skills</a></li>
+      <li><a class="hover:text-indigo-300 transition" href="#projects">Projects</a></li>
+      <li><a class="hover:text-indigo-300 transition" href="#publications">Publications</a></li>
+      <li><a class="hover:text-indigo-300 transition" href="#certifications">Certifications</a></li>
+      <li><a class="hover:text-indigo-300 transition" href="#testimonials">Testimonials</a></li>
+      <li><a class="hover:text-indigo-300 transition" href="#contact">Contact</a></li>
+     </ul>
+     <button class="md:hidden focus:outline-none" id="menu-btn" aria-label="Toggle menu">
+      <i class="fas fa-bars text-2xl">
+      </i>
+     </button>
+    </nav>
+   </div>
+   <div class="hidden md:hidden bg-indigo-600" id="mobile-menu">
+    <ul class="flex flex-col space-y-4 px-6 py-6 font-semibold">
+     <li><a class="block hover:text-indigo-300 transition" href="#home">Home</a></li>
+     <li><a class="block hover:text-indigo-300 transition" href="#about">About</a></li>
+     <li><a class="block hover:text-indigo-300 transition" href="#experience">Experience</a></li>
+     <li><a class="block hover:text-indigo-300 transition" href="#skills">Skills</a></li>
+     <li><a class="block hover:text-indigo-300 transition" href="#projects">Projects</a></li>
+     <li><a class="block hover:text-indigo-300 transition" href="#publications">Publications</a></li>
+     <li><a class="block hover:text-indigo-300 transition" href="#certifications">Certifications</a></li>
+     <li><a class="block hover:text-indigo-300 transition" href="#testimonials">Testimonials</a></li>
+     <li><a class="block hover:text-indigo-300 transition" href="#contact">Contact</a></li>
+    </ul>
+   </div>
+  </header>
+  <!-- Hero Section -->
+  <section class="pt-28 pb-20 bg-gradient-to-r from-indigo-700 to-indigo-900 text-white" id="home">
+   <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center md:items-start md:space-x-12">
+    <div class="md:w-1/2 text-center md:text-left">
+     <h1 class="text-5xl font-extrabold leading-tight mb-4">
+      Muhammad Talha
+     </h1>
+     <p class="text-xl max-w-lg mx-auto md:mx-0">
+      Pharmacy professional with 2+ years of experience (including internships) in pharmaceutical
+          sales, clinical research, and hospital operations. Skilled in sales strategy, drug formulation,
+          and regulatory compliance.
+     </p>
+     <div class="mt-8 flex justify-center md:justify-start space-x-6">
+      <a class="bg-white text-indigo-700 font-semibold px-8 py-3 rounded-lg shadow-lg hover:bg-indigo-100 transition" href="#contact">
+       Hire Me
+      </a>
+      <a class="border border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-indigo-700 transition" href="#projects">
+       My Work
+      </a>
+     </div>
+     <div class="mt-10 flex justify-center md:justify-start space-x-8 text-3xl">
+      <a aria-label="LinkedIn" class="hover:text-indigo-300 transition" href="https://www.linkedin.com/in/muhammad-talha-57011b19a" target="_blank" rel="noopener noreferrer">
+       <i class="fab fa-linkedin">
+       </i>
+      </a>
+      <a aria-label="Email" class="hover:text-indigo-300 transition" href="mailto:talharasheed088@gmail.com">
+       <i class="fas fa-envelope">
+       </i>
+      </a>
+      <a aria-label="Phone" class="hover:text-indigo-300 transition" href="tel:+923256560861">
+       <i class="fas fa-phone-alt">
+       </i>
+      </a>
+      <a aria-label="Instagram" class="hover:text-indigo-300 transition" href="https://www.instagram.com/talharajpoot786404/?igsh=ejR3ajc4Y3czMmwx" target="_blank" rel="noopener noreferrer">
+       <i class="fab fa-instagram">
+       </i>
+      </a>
+     </div>
+    </div>
+    <div class="md:w-1/2 flex justify-center mb-12 md:mb-0">
+     <img 
+       alt="Professional portrait of Muhammad Talha, a young South Asian man with short black hair wearing a dark suit and white shirt, smiling confidently with a blurred office background" 
+       class="rounded-full w-72 h-72 object-cover shadow-2xl border-4 border-white" 
+       src="https://media.licdn.com/dms/image/v2/D4D03AQF2ACA1Nw74lw/profile-displayphoto-shrink_400_400/B4DZZeAOAGHIAk-/0/1745333839390?e=1750896000&v=beta&t=4KvYT3rdZFPb9UDUDa2vqea9pmzD-bHiMSlhzUkER0E"
+       style="object-fit: cover; background-color: #ffffff;"
+     />
+    </div>
+   </div>
+  </section>
+  <!-- About Section -->
+  <section class="py-20 bg-white" id="about">
+   <div class="max-w-5xl mx-auto px-6">
+    <h2 class="text-4xl font-bold text-indigo-700 mb-6 text-center">
+     About Me
+    </h2>
+    <div class="flex flex-col md:flex-row items-center md:items-start md:space-x-12">
+     <div class="md:w-1/3 flex justify-center mb-8 md:mb-0">
+      <img alt="Portrait of Muhammad Talha, a young South Asian man with short black hair wearing formal attire, with a modern abstract background in vibrant colors" class="rounded-lg shadow-lg w-72 h-72 object-cover transition-transform duration-500 hover:scale-105" height="400" src="https://media.licdn.com/dms/image/v2/D4D03AQFefjJm3JHmQQ/profile-displayphoto-shrink_400_400/B4DZZd1rUEGgAk-/0/1745331076461?e=1750896000&v=beta&t=RgyaXIEQRYeta52NeauTm2QiIclkqQzO10WqvppFKQE" width="400"/>
+     </div>
+     <div class="md:w-2/3 text-gray-700 text-lg leading-relaxed transition-colors duration-500 hover:text-indigo-700">
+      <p>
+       I am a Pharmacy professional with over 2 years of experience (including internships) in pharmaceutical sales, clinical research, and hospital operations. Skilled in sales strategy, drug formulation, and regulatory compliance. Certified in FDA compliance, pharmacovigilance, and clinical research. I leverage technical skills such as Power BI and scientific writing to deliver data-driven solutions in fast-paced environments.
+      </p>
+      <p class="mt-4">
+       Passionate about advancing healthcare through research and effective pharmaceutical practices, I continuously develop my skills and knowledge to contribute meaningfully to the medical and pharmaceutical community.
+      </p>
+      <div class="mt-8 grid grid-cols-3 gap-8 text-center">
+       <div>
+        <p class="text-indigo-700 font-extrabold text-3xl">
+         24
+        </p>
+        <p class="text-gray-600 font-semibold">
+         Years Old
+        </p>
+       </div>
+       <div>
+        <p class="text-indigo-700 font-extrabold text-3xl">
+         2+
+        </p>
+        <p class="text-gray-600 font-semibold">
+         Years Experience
+        </p>
+       </div>
+       <div>
+        <p class="text-indigo-700 font-extrabold text-3xl">
+         6+
+        </p>
+        <p class="text-gray-600 font-semibold">
+         Certifications &amp; Trainings
+        </p>
+       </div>
+      </div>
+      <div class="mt-10 text-center md:text-left">
+       <a class="inline-flex items-center space-x-3 bg-indigo-700 text-white font-semibold px-6 py-3 rounded-lg shadow hover:bg-indigo-800 transition" href="Muhammad_Talha_CV.pdf" download>
+        <i class="fas fa-download"></i>
+        <span>Download My CV</span>
+       </a>
+      </div>
+     </div>
+    </div>
+   </div>
+  </section>
+  <!-- Experience Section -->
+  <section class="py-20 bg-gray-50" id="experience">
+   <div class="max-w-6xl mx-auto px-6">
+    <h2 class="text-4xl font-bold text-indigo-700 mb-12 text-center">
+     Professional Experience
+    </h2>
+    <div class="space-y-12">
+     <article class="bg-white rounded-lg shadow-lg p-8 border-l-8 border-indigo-700 transition-transform duration-300 hover:scale-[1.02] hover:shadow-indigo-400/50">
+      <header class="flex items-center space-x-6 mb-6">
+       <img alt="Shaigan Pharmaceutical logo" class="h-20 w-40 object-contain rounded-md shadow" src="https://shaiganhealthcare.com/cdn/shop/files/logo.webp?v=1695223238"/>
+       <div>
+        <h3 class="text-2xl font-semibold text-indigo-700">
+         Territory Manager
+        </h3>
+        <p class="font-semibold text-gray-700">
+         Shaigan Pharmaceutical
+        </p>
+        <p class="text-gray-500 italic">
+         Current
+        </p>
+       </div>
+      </header>
+      <ul class="list-disc list-inside text-gray-700 space-y-3 text-lg">
+       <li>
+        Achieved 105% of annual sales targets, expanding business in Lahore's Gynaecology and Orthopaedics sector.
+       </li>
+       <li>
+        Conducted market research, identifying 15+ new business opportunities.
+       </li>
+       <li>
+        Led promotional events and CMEs, increasing brand awareness by 30%.
+       </li>
+      </ul>
+     </article>
+     <article class="bg-white rounded-lg shadow-lg p-8 border-l-8 border-indigo-700 transition-transform duration-300 hover:scale-[1.02] hover:shadow-indigo-400/50">
+      <header class="flex items-center space-x-6 mb-6">
+       <img alt="GT Pharma logo" class="h-20 w-20 object-contain rounded-md shadow" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVQfk0HKIA-BQVGDV1QDjY4Oa6DYYywgiMFwnOg2wFxVwq4c-JyWGDLbG9A9X_q513-Vc&amp;usqp=CAU"/>
+       <div>
+        <h3 class="text-2xl font-semibold text-indigo-700">
+         Medical Information Officer
+        </h3>
+        <p class="font-semibold text-gray-700">
+         GT Pharma, LGS Area
+        </p>
+        <p class="text-gray-500 italic">
+         Previous
+        </p>
+       </div>
+      </header>
+      <ul class="list-disc list-inside text-gray-700 space-y-3 text-lg">
+       <li>
+        Trained 100+ healthcare professionals, improving prescribing accuracy by 25%.
+       </li>
+       <li>
+        Resolved 50+ monthly client inquiries, enhancing customer satisfaction by 40%.
+       </li>
+      </ul>
+     </article>
+     <article class="bg-white rounded-lg shadow-lg p-8 border-l-8 border-indigo-700 transition-transform duration-300 hover:scale-[1.02] hover:shadow-indigo-400/50">
+      <header class="flex items-center space-x-6 mb-6">
+       <img alt="HybridMedics logo, blue and white medical cross" class="h-20 w-20 object-contain rounded-md shadow" src="https://storage.googleapis.com/a1aa/image/09d5d8d3-b141-4c78-3c97-c3f826ce315c.jpg"/>
+       <div>
+        <h3 class="text-2xl font-semibold text-indigo-700">
+         Research Volunteer
+        </h3>
+        <p class="font-semibold text-gray-700">
+         HybridMedics
+        </p>
+        <p class="text-gray-500 italic">
+         Previous
+        </p>
+       </div>
+      </header>
+      <ul class="list-disc list-inside text-gray-700 space-y-3 text-lg">
+       <li>
+        Co-authored 2 peer-reviewed publications on epigenetic therapies for cancer.
+       </li>
+       <li>
+        Streamlined data collection processes, reducing research turnaround time by 20%.
+       </li>
+      </ul>
+     </article>
+     <article class="bg-white rounded-lg shadow-lg p-8 border-l-8 border-indigo-700 transition-transform duration-300 hover:scale-[1.02] hover:shadow-indigo-400/50">
+      <header class="flex items-center space-x-6 mb-6">
+       <img alt="OrganoPharm logo, green and white leaf" class="h-20 w-20 object-contain rounded-md shadow" src="https://storage.googleapis.com/a1aa/image/4b7d706b-d22e-4963-c1d5-309966bde714.jpg"/>
+       <div>
+        <h3 class="text-2xl font-semibold text-indigo-700">
+         Sales and Marketing Intern
+        </h3>
+        <p class="font-semibold text-gray-700">
+         OrganoPharm
+        </p>
+        <p class="text-gray-500 italic">
+         Previous
+        </p>
+       </div>
+      </header>
+      <ul class="list-disc list-inside text-gray-700 space-y-3 text-lg">
+       <li>
+        Developed marketing strategies to promote pharmaceutical products.
+       </li>
+       <li>
+        Created marketing materials and presentations for sales meetings.
+       </li>
+      </ul>
+     </article>
+     <article class="bg-white rounded-lg shadow-lg p-8 border-l-8 border-indigo-700 transition-transform duration-300 hover:scale-[1.02] hover:shadow-indigo-400/50">
+      <header class="flex items-center space-x-6 mb-6">
+       <img alt="Jinnah Hospital Faisal Town logo" class="h-20 w-20 object-contain rounded-md shadow" src="https://www.contactdetails.info/admin/managebussinesscards/bussinesscardlogos/870768blob"/>
+       <div>
+        <h3 class="text-2xl font-semibold text-indigo-700">
+         Hospital Intern
+        </h3>
+        <p class="font-semibold text-gray-700">
+         Jinnah Hospital Faisal Town, Lahore
+        </p>
+        <p class="text-gray-500 italic">
+         Previous
+        </p>
+       </div>
+      </header>
+      <ul class="list-disc list-inside text-gray-700 space-y-3 text-lg">
+       <li>
+        Dispensed 100+ medications daily with 100% accuracy, supported by EHR systems.
+       </li>
+       <li>
+        Conducted 50+ patient counselling sessions, improving adherence to treatment plans by 35%.
+       </li>
+      </ul>
+     </article>
+     <article class="bg-white rounded-lg shadow-lg p-8 border-l-8 border-indigo-700 transition-transform duration-300 hover:scale-[1.02] hover:shadow-indigo-400/50">
+      <header class="flex items-center space-x-6 mb-6">
+       <img alt="Drug &amp; Poison Information Centre logo, medical cross with poison symbol" class="h-20 w-20 object-contain rounded-md shadow" src="https://storage.googleapis.com/a1aa/image/f7b7205b-5f70-4617-a7f3-b258394b4553.jpg"/>
+       <div>
+        <h3 class="text-2xl font-semibold text-indigo-700">
+         Drug &amp; Poison Information Centre (DPIC) Internship
+        </h3>
+        <p class="font-semibold text-gray-700">
+         Internship
+        </p>
+       </div>
+      </header>
+      <ul class="list-disc list-inside text-gray-700 space-y-3 text-lg">
+       <li>
+        Researched and provided information on drug interactions, poison management, and adverse effects.
+       </li>
+       <li>
+        Assisted healthcare professionals in poison control cases by offering timely drug-related data.
+       </li>
+       <li>
+        Contributed to patient education by creating informational materials on poison prevention and safe drug use.
+       </li>
+      </ul>
+     </article>
+     <article class="bg-white rounded-lg shadow-lg p-8 border-l-8 border-indigo-700 transition-transform duration-300 hover:scale-[1.02] hover:shadow-indigo-400/50">
+      <header class="flex items-center space-x-6 mb-6">
+       <img alt="Fazal Din Pharma Plus logo" class="h-20 w-20 object-contain rounded-md shadow" src="https://pharmaplus.com.pk/wp-content/uploads/2022/03/pharma-logo.png"/>
+       <div>
+        <h3 class="text-2xl font-semibold text-indigo-700">
+         Community Pharmacy Experience
+        </h3>
+        <p class="font-semibold text-gray-700">
+         Fazal Din Pharma Plus, Lahore
+        </p>
+       </div>
+      </header>
+      <ul class="list-disc list-inside text-gray-700 space-y-3 text-lg">
+       <li>
+        Assisted in daily pharmacy operations (dispensing and inventory management).
+       </li>
+       <li>
+        Provided patient counselling on medication usage and side effects.
+       </li>
+       <li>
+        Conducted health screenings and monitored patient conditions.
+       </li>
+       <li>
+        Supported the implementation of pharmacy services and health programs.
+       </li>
+      </ul>
+     </article>
+    </div>
+   </div>
+  </section>
+  <!-- Skills Section Updated -->
+  <section class="py-20 bg-white" id="skills">
+   <div class="max-w-6xl mx-auto px-6">
+    <h2 class="text-4xl font-bold text-indigo-700 mb-12 text-center">
+     Skills &amp; Laboratory Techniques
+    </h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-5xl mx-auto text-gray-700 text-lg">
+     <!-- Pharmaceutical Skills Card -->
+     <div class="skill-card">
+      <div class="flex items-center space-x-4 mb-6">
+       <img alt="Pills icon representing pharmaceutical skills" class="w-12 h-12" src="https://img.icons8.com/ios-filled/64/4b5563/pills.png"/>
+       <h3 class="text-2xl font-semibold text-indigo-700">
+        Pharmaceutical Skills
+       </h3>
+      </div>
+      <ul class="list-disc list-inside space-y-2 text-gray-700">
+       <li>
+        Dispensing
+       </li>
+       <li>
+        Drug Information
+       </li>
+       <li>
+        Patient Counselling
+       </li>
+       <li>
+        Pharmacovigilance
+       </li>
+      </ul>
+     </div>
+     <!-- Technical Skills Card -->
+     <div class="skill-card">
+      <div class="flex items-center space-x-4 mb-6">
+       <img alt="Settings gear icon representing technical skills" class="w-12 h-12" src="https://img.icons8.com/ios-filled/64/4b5563/settings.png"/>
+       <h3 class="text-2xl font-semibold text-indigo-700">
+        Technical Skills
+       </h3>
+      </div>
+      <ul class="list-disc list-inside space-y-2 text-gray-700">
+       <li>
+        Microsoft Office 360 (Word, PowerPoint, Excel)
+       </li>
+       <li>
+        Power BI
+       </li>
+       <li>
+        Scientific Research Writing
+       </li>
+       <li>
+        E-marketing
+       </li>
+      </ul>
+     </div>
+     <!-- Soft Skills Card -->
+     <div class="skill-card">
+      <div class="flex items-center space-x-4 mb-6">
+       <img alt="Handshake icon representing soft skills" class="w-12 h-12" src="https://img.icons8.com/ios-filled/64/4b5563/handshake.png"/>
+       <h3 class="text-2xl font-semibold text-indigo-700">
+        Soft Skills
+       </h3>
+      </div>
+      <ul class="list-disc list-inside space-y-2 text-gray-700">
+       <li>
+        Communication
+       </li>
+       <li>
+        Team Collaboration
+       </li>
+       <li>
+        Problem-Solving
+       </li>
+      </ul>
+     </div>
+     <!-- Laboratory & Analytical Techniques Card -->
+     <div class="skill-card">
+      <div class="flex items-center space-x-4 mb-6">
+       <img alt="Microscope icon representing laboratory and analytical techniques" class="w-12 h-12" src="https://img.icons8.com/ios-filled/64/4b5563/microscope.png"/>
+       <h3 class="text-2xl font-semibold text-indigo-700">
+        Laboratory &amp; Analytical Techniques
+       </h3>
+      </div>
+      <ul class="list-disc list-inside space-y-2 text-gray-700">
+       <li>
+        UV Spectrophotometry: Absorbance spectrum analysis and concentration interpretation
+       </li>
+       <li>
+        Microbiology Techniques: Sterilization, serial dilution, culture growth, inoculation, incubation, aseptic techniques, differential staining
+       </li>
+       <li>
+        Quality Control Instruments: Proficient with disintegration apparatus and dissolution tester
+       </li>
+       <li>
+        Titrimetric Analysis: Skilled in volumetric analysis for pharmaceutical formulations
+       </li>
+      </ul>
+     </div>
+    </div>
+   </div>
+  </section>
+  <!-- Projects Section Updated -->
+  <section class="py-20 bg-gray-50" id="projects">
+   <div class="max-w-6xl mx-auto px-6">
+    <h2 class="text-4xl font-bold text-indigo-700 mb-12 text-center">
+     Projects
+    </h2>
+    <div class="max-w-4xl mx-auto space-y-16">
+     <!-- Enhanced Project Card for Baricitinib Gel -->
+     <article class="project-card">
+      <div class="flex flex-col md:flex-row md:space-x-10 items-center">
+       <img alt="Pharmaceutical laboratory scene showing scientists preparing topical gel formulations with glass beakers, mixing equipment, and scientific instruments in a clean lab environment" class="rounded-lg w-full md:w-1/2 object-cover shadow-lg mb-6 md:mb-0" height="400" src="https://storage.googleapis.com/a1aa/image/7f0f532d-6c46-4f80-9213-cc9f3e5f5d04.jpg" width="600"/>
+       <div class="md:w-1/2">
+        <h3 class="text-3xl font-semibold text-indigo-600 mb-4">
+         Formulation of Baricitinib-Loaded Microparticles Gel for Psoriasis
+        </h3>
+        <p class="text-gray-700 text-lg mb-6 leading-relaxed">
+         Developed a topical gel using the quasi-emulsion diffusion method, achieving 65% efficacy in psoriasis management during in vivo trials. The gel formulation includes Carbopol 934, triethylamine, and 5% transcutol, and was subjected to comprehensive in vivo and in vitro studies, including the mouse tail model, to evaluate its therapeutic effectiveness and safety profile.
+        </p>
+        <ul class="list-disc list-inside text-gray-700 space-y-3 text-lg">
+         <li>
+          Optimized microparticle size and drug loading for enhanced skin penetration.
+         </li>
+         <li>
+          Conducted stability testing under various environmental conditions.
+         </li>
+         <li>
+          Performed in vitro release studies to assess drug release kinetics.
+         </li>
+         <li>
+          Validated efficacy through animal model testing and histopathological analysis.
+         </li>
+        </ul>
+       </div>
+      </div>
+     </article>
+     <!-- Updated Project Card for Stress and Insomnia -->
+     <article class="project-card">
+      <h3 class="text-2xl font-semibold text-indigo-600 mb-6">
+       Assessment of Stress Level and Insomnia Among Young Adults
+      </h3>
+      <div class="flex flex-col md:flex-row md:space-x-8 items-center mb-6">
+       <img alt="Young adult woman sitting on bed looking stressed with insomnia, bedroom setting" class="rounded-md w-full md:w-1/2 object-cover max-h-72 shadow-md mb-6 md:mb-0" height="400" src="https://storage.googleapis.com/a1aa/image/653ec246-d8e3-4940-82ab-6c7da1363e81.jpg" width="600"/>
+       <img alt="Graph showing positive correlation between stress and insomnia severity with statistical data and charts" class="rounded-md w-full md:w-1/2 object-cover max-h-72 shadow-md" height="400" src="https://storage.googleapis.com/a1aa/image/b19f392f-7040-4a0b-0efa-7704c24e7f32.jpg" width="600"/>
+      </div>
+      <p class="text-gray-700 text-lg mb-4 leading-relaxed">
+       The study titled
+       <strong>
+        "Assessment of Stress Level and Insomnia Among Young Adults"
+       </strong>
+       aimed to explore the correlation between stress and insomnia in individuals aged 18 to 30 years, including university students and young professionals. Using validated tools—the Perceived Stress Scale (PSS-10) and the Insomnia Severity Index (ISI)—data were collected from 250 participants. SPSS v25 was used for statistical analysis, applying Pearson correlation, chi-square tests, and descriptive statistics. The results revealed that 72.8% of participants reported moderate to high stress, while 63.2% exhibited clinical levels of insomnia, ranging from subthreshold to severe. Only 14.8% reported both low stress and normal sleep patterns, highlighting the widespread prevalence of mental health-related sleep disturbances in this age group.
+      </p>
+      <p class="text-gray-700 text-lg mb-4 leading-relaxed">
+       A strong positive correlation (r = 0.71, p &lt; 0.001) was observed between stress and insomnia severity, confirming that individuals experiencing higher stress levels were significantly more likely to suffer from sleep-related issues. Gender-based analysis showed females had significantly higher stress and insomnia scores (p &lt; 0.05), particularly those juggling academic responsibilities or caregiving roles. Academic pressure played a key role in worsening sleep patterns, especially during exam periods. Additionally, screen time exceeding five hours daily—especially at night—was associated with delayed sleep onset and poor sleep quality. Lifestyle factors such as caffeine intake after 6 PM, sedentary behavior, and irregular sleep routines further contributed to elevated insomnia scores. Conversely, participants engaging in mindfulness activities or physical exercise reported relatively better sleep despite moderate stress levels.
+      </p>
+      <p class="text-gray-700 text-lg mb-4 leading-relaxed">
+       In conclusion, the study emphasizes that stress is a major predictor of insomnia among young adults, intensified by academic and digital pressures and poor sleep hygiene. It highlights the importance of implementing institutional stress-reduction strategies, sleep hygiene education, and mental health awareness programs. Recommendations include digital detox practices before bedtime, promoting regular exercise, and introducing structured counseling or wellness workshops in academic and work settings. Future research should expand with longitudinal data and biological stress markers such as cortisol levels for a more comprehensive understanding of the stress-insomnia dynamic.
+      </p>
+     </article>
+
+     <!-- Publications with corrected heading -->
+     <div class="mt-20">
+       <h2 class="text-5xl font-extrabold text-indigo-700 mb-12 text-center tracking-tight">
+         Publications
+       </h2>
+       <div class="space-y-8">
+         <article class="bg-white rounded-lg shadow-lg p-8 border-l-8 border-indigo-700 transition-transform duration-300 hover:scale-[1.02] hover:shadow-indigo-400/50">
+          <h4 class="text-xl font-semibold text-indigo-700 mb-4">
+            Non-Compliance
+          </h4>
+          <p class="text-gray-700 text-lg mb-6">
+            A comprehensive study on medication non-compliance patterns and their impact on treatment outcomes.
+          </p>
+          <a href="https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=non+compliance+MUHAMMAD+TALHA&btnG=&oq=non" 
+             target="_blank" 
+             rel="noopener noreferrer" 
+             class="inline-flex items-center space-x-2 text-indigo-600 hover:text-indigo-800 group">
+            <i class="fas fa-external-link-alt transition-transform group-hover:translate-x-1"></i>
+            <span>View Publication</span>
+          </a>
+         </article>
+
+         <article class="bg-white rounded-lg shadow-lg p-8 border-l-8 border-indigo-700 transition-transform duration-300 hover:scale-[1.02] hover:shadow-indigo-400/50">
+          <h4 class="text-xl font-semibold text-indigo-700 mb-4">
+            Management of Escherichia coli (E. coli) Infections Using Alternative and Conventional Medicines
+          </h4>
+          <p class="text-gray-700 text-lg mb-6">
+            Research exploring the effectiveness of both alternative and conventional treatment approaches for E. coli infections.
+          </p>
+          <a href="https://doi.org/10.47278/book.CAM/2024.007" 
+             target="_blank" 
+             rel="noopener noreferrer" 
+             class="inline-flex items-center space-x-2 text-indigo-600 hover:text-indigo-800 group">
+            <i class="fas fa-external-link-alt transition-transform group-hover:translate-x-1"></i>
+            <span>View Publication</span>
+          </a>
+         </article>
+       </div>
+     </div>
+    </div>
+   </div>
+  </section>
+  <!-- Certifications Section -->
+  <section class="py-20 bg-white" id="certifications">
+   <div class="max-w-6xl mx-auto px-6">
+    <h2 class="text-4xl font-bold text-indigo-700 mb-12 text-center">
+     Certifications &amp; Achievements
+    </h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-5xl mx-auto text-gray-700">
+     <div class="space-y-8">
+      <div class="flex items-center space-x-4">
+       <img alt="University of Chicago logo, stylized shield with red and white colors" class="h-14 w-14 object-contain" src="https://storage.googleapis.com/a1aa/image/e8c0ccd0-5bba-4980-f922-e2462dd3bc98.jpg"/>
+       <div>
+        <h4 class="font-semibold text-indigo-600 text-lg">
+         Understanding the Brain: The Neurology of Everyday Life
+        </h4>
+        <p class="text-sm">
+         University of Chicago (2024)
+        </p>
+       </div>
+      </div>
+      <div class="flex items-center space-x-4">
+       <img alt="FDA logo, blue and white with stylized letters" class="h-14 w-14 object-contain" src="https://storage.googleapis.com/a1aa/image/f184bbf2-873f-43e2-9848-c5293cffa1d8.jpg"/>
+       <div>
+        <h4 class="font-semibold text-indigo-600 text-lg">
+         FDA Regulatory Compliance | Human Drug Review &amp; Generic Drugs Overview
+        </h4>
+        <p class="text-sm">
+         FDA (2023)
+        </p>
+       </div>
+      </div>
+      <div class="flex items-center space-x-4">
+       <img alt="University of Cape Town logo, stylized shield with blue and gold colors" class="h-14 w-14 object-contain" src="https://storage.googleapis.com/a1aa/image/292288f6-6fab-4310-237b-6f9b05718786.jpg"/>
+       <div>
+        <h4 class="font-semibold text-indigo-600 text-lg">
+         Clinical Research: Behind the Statistics
+        </h4>
+        <p class="text-sm">
+         University of Cape Town (2023)
+        </p>
+       </div>
+      </div>
+      <div class="flex items-center space-x-4">
+       <img alt="Alison logo, green and white stylized A" class="h-14 w-14 object-contain" src="https://storage.googleapis.com/a1aa/image/f18c23f0-ab35-46ce-6844-771c0c1da6af.jpg"/>
+       <div>
+        <h4 class="font-semibold text-indigo-600 text-lg">
+         Diploma in Medical Coding and Medical Billing
+        </h4>
+        <p class="text-sm">
+         Alison (2024)
+        </p>
+       </div>
+      </div>
+     </div>
+     <div class="space-y-8">
+      <div class="flex items-center space-x-4">
+       <img alt="Med Plus Ambassadorship Program logo, stylized medical cross with blue and white colors" class="h-14 w-14 object-contain" src="https://storage.googleapis.com/a1aa/image/3554ac8b-af6d-4a69-b180-855532b44b24.jpg"/>
+       <div>
+        <h4 class="font-semibold text-indigo-600 text-lg">
+         Training in Microsoft Word, PowerPoint, Excel, Scientific Research Writing, E-marketing
+        </h4>
+        <p class="text-sm">
+         Med Plus Ambassadorship Program (2023)
+        </p>
+       </div>
+      </div>
+      <div class="flex items-center space-x-4">
+       <img alt="World Health Organization logo, blue and white globe with snake and staff" class="h-14 w-14 object-contain" src="https://storage.googleapis.com/a1aa/image/9576b4d5-48e8-4296-fc1c-c140e3bc8d9b.jpg"/>
+       <div>
+        <h4 class="font-semibold text-indigo-600 text-lg">
+         Healthcare Associated Infection Surveillance
+        </h4>
+        <p class="text-sm">
+         World Health Organization (2023)
+        </p>
+       </div>
+      </div>
+      <div class="flex items-center space-x-4">
+       <img alt="United Latino Students Association logo, stylized globe with hands" class="h-14 w-14 object-contain" src="https://storage.googleapis.com/a1aa/image/e33dd056-cd72-494f-5274-6695d0767e07.jpg"/>
+       <div>
+        <h4 class="font-semibold text-indigo-600 text-lg">
+         Mpox and the 2022-2023 Global Outbreak
+        </h4>
+        <p class="text-sm">
+         United Latino Students Association (2024)
+        </p>
+       </div>
+      </div>
+      <div class="flex items-center space-x-4">
+       <img alt="Duke School of Medicine logo, stylized blue and white shield" class="h-14 w-14 object-contain" src="https://storage.googleapis.com/a1aa/image/74b17647-299c-4382-1cfa-248289f14ddd.jpg"/>
+       <div>
+        <h4 class="font-semibold text-indigo-600 text-lg">
+         ORAQ Regulatory Affairs Training Program
+        </h4>
+        <p class="text-sm">
+         Duke School of Medicine (Oct-Nov 2024)
+        </p>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </section>
+  <!-- Testimonials Section -->
+  <section class="py-20 bg-indigo-50" id="testimonials">
+   <div class="max-w-6xl mx-auto px-6">
+    <h2 class="text-4xl font-bold text-indigo-700 mb-12 text-center">
+     Testimonials
+    </h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-10 max-w-5xl mx-auto">
+     <div class="bg-white rounded-lg shadow-lg p-8 flex flex-col items-center text-center transition-transform duration-300 hover:scale-105 hover:shadow-indigo-400/50">
+      <img alt="Photo of Prof. Dr. Ghulam Murtaza, a middle-aged South Asian man with glasses and a confident smile" class="w-20 h-20 rounded-full object-cover mb-4 shadow" height="80" src="https://lahore.comsats.edu.pk/Images/employees/1245-692-8586703362417847227.jpg" width="80"/>
+      <p class="text-gray-700 italic mb-4">
+       "Muhammad Talha is an outstanding individual with remarkable academic prowess, critical thinking, and hands-on research skills in pharmaceutical sciences. His commitment to excellence and active participation in both academic and research projects make him a valuable asset to any scientific or clinical setting."
+      </p>
+      <p class="font-semibold text-indigo-700">
+       Prof. Dr. Ghulam Murtaza
+      </p>
+      <p class="text-gray-500 text-sm">
+       Head, Department of Pharmacy
+       <br/>
+       COMSATS University Islamabad, Lahore Campus
+       <br/>
+       <a class="text-indigo-600 hover:underline" href="mailto:gmdogar@cuilahore.edu.pk">
+        gmdogar@cuilahore.edu.pk
+       </a>
+      </p>
+     </div>
+     <div class="bg-white rounded-lg shadow-lg p-8 flex flex-col items-center text-center transition-transform duration-300 hover:scale-105 hover:shadow-indigo-400/50">
+      <img alt="Photo of Dr. Yasser Shahzad, a middle-aged South Asian man with short hair and glasses, smiling confidently" class="w-20 h-20 rounded-full object-cover mb-4 shadow" height="80" src="https://media.licdn.com/dms/image/v2/D4D03AQEZ4IhPjfL1cw/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1718289278295?e=1750896000&v=beta&t=o77iYO0PncPQHnF9Bri0sss3UWBQab_WBUajglo6-PI" width="80"/>
+      <p class="text-gray-700 italic mb-4">
+       "Muhammad Talha is an intellectually sharp and highly motivated individual with a strong academic foundation in pharmaceutics. His analytical mindset, timely execution, and active participation make him an asset in any research or academic setting."
+      </p>
+      <p class="font-semibold text-indigo-700">
+       Dr. Yasser Shahzad
+      </p>
+      <p class="text-gray-500 text-sm">
+       Assistant Professor of Pharmaceutics
+       <br/>
+       COMSATS University Islamabad, Lahore Campus
+       <br/>
+       <a class="text-indigo-600 hover:underline" href="mailto:yshahzad@cuilahore.edu.pk">
+        yshahzad@cuilahore.edu.pk
+       </a>
+      </p>
+     </div>
+     <div class="bg-white rounded-lg shadow-lg p-8 flex flex-col items-center text-center transition-transform duration-300 hover:scale-105 hover:shadow-indigo-400/50">
+      <img alt="Photo of Dr. Waseem Hassan, a middle-aged South Asian man with short hair and glasses, smiling confidently" class="w-20 h-20 rounded-full object-cover mb-4 shadow" height="80" src="https://media.licdn.com/dms/image/v2/D4E03AQFnGXYQUNKWJA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1714270894798?e=1750896000&v=beta&t=3ah5O6r0JxdJ6eefElZapAqbsXwYKZWHQh2KwzQnFMo" width="80"/>
+      <p class="text-gray-700 italic mb-4">
+       "Muhammad Talha is a diligent and passionate student with a keen interest in neuroscience and pharmacology. His eagerness to learn, along with his ability to grasp complex concepts and engage in research activities, makes him an outstanding candidate for any academic or research-based opportunity."
+      </p>
+      <p class="font-semibold text-indigo-700">
+       Dr. Waseem Hassan
+      </p>
+      <p class="text-gray-500 text-sm">
+       Associate Head of Department / Assistant Professor, Pharmacy
+       <br/>
+       COMSATS University Islamabad, Lahore Campus
+       <br/>
+       <a class="text-indigo-600 hover:underline" href="mailto:waseemhassan@cuilahore.edu.pk">
+        waseemhassan@cuilahore.edu.pk
+       </a>
+      </p>
+     </div>
+    </div>
+   </div>
+  </section>
+  <!-- Contact Section -->
+  <section class="py-20 bg-gradient-to-br from-indigo-900 via-indigo-800 to-indigo-900 relative overflow-hidden" id="contact">
+    <!-- Background decoration -->
+    <div class="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg width=\"60\" height=\"60\" viewBox=\"0 0 60 60\" xmlns=\"http://www.w3.org/2000/svg\"%3E%3Cg fill=\"none\" fill-rule=\"evenodd\"%3E%3Cg fill=\"%234338ca\" fill-opacity=\"0.1\"%3E%3Cpath d=\"M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')] opacity-50"></div>
+    
+    <div class="max-w-5xl mx-auto px-6 relative z-10">
+        <h2 class="text-4xl font-bold mb-4 text-white text-center">
+            Send Me A Message
+        </h2>
+        <p class="text-indigo-200 text-center mb-12 text-lg">
+            Let's discuss how we can work together
+        </p>
+        <div class="max-w-3xl mx-auto backdrop-blur-sm bg-white/10 p-8 rounded-2xl shadow-2xl border border-white/20">
+            <form id="contactForm" class="space-y-8">
+                <input type="hidden" name="access_key" value="b5786130-d43a-49de-9e0b-635c65e45e07">
+                <input type="hidden" name="subject" value="New Contact Form Submission - Portfolio">
+                <input type="hidden" name="from_name" value="Portfolio Contact Form">
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="group">
+                        <label class="block mb-2 text-lg font-medium text-indigo-100" for="name">
+                            Full Name
+                        </label>
+                        <input class="w-full px-4 py-3 rounded-xl bg-white/10 border-2 border-indigo-300/30 text-white placeholder-indigo-200/70 focus:outline-none focus:border-indigo-300 focus:bg-white/20 focus:ring-0 transition-all duration-300 group-hover:border-indigo-300/50"
+                               id="name"
+                               name="name"
+                               placeholder="John Doe"
+                               required
+                               type="text"
+                               minlength="2"
+                               pattern="[A-Za-z ]{2,50}"
+                               title="Please enter a valid name (2-50 characters, letters only)"/>
+                        <div class="text-red-300 text-sm mt-1 hidden" id="nameError"></div>
+                    </div>
+                    
+                    <div class="group">
+                        <label class="block mb-2 text-lg font-medium text-indigo-100" for="email">
+                            Email Address
+                        </label>
+                        <input class="w-full px-4 py-3 rounded-xl bg-white/10 border-2 border-indigo-300/30 text-white placeholder-indigo-200/70 focus:outline-none focus:border-indigo-300 focus:bg-white/20 focus:ring-0 transition-all duration-300 group-hover:border-indigo-300/50"
+                               id="email"
+                               name="email"
+                               placeholder="your@email.com"
+                               required
+                               type="email"
+                               pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                               title="Please enter a valid email address"/>
+                        <div class="text-red-300 text-sm mt-1 hidden" id="emailError"></div>
+                    </div>
+                </div>
+
+                <div class="group">
+                    <label class="block mb-2 text-lg font-medium text-indigo-100" for="subject">
+                        Subject
+                    </label>
+                    <input class="w-full px-4 py-3 rounded-xl bg-white/10 border-2 border-indigo-300/30 text-white placeholder-indigo-200/70 focus:outline-none focus:border-indigo-300 focus:bg-white/20 focus:ring-0 transition-all duration-300 group-hover:border-indigo-300/50"
+                           id="subject"
+                           name="subject"
+                           placeholder="How can I help you?"
+                           required
+                           type="text"/>
+                    <div class="text-red-300 text-sm mt-1 hidden" id="subjectError"></div>
+                </div>
+
+                <div class="group">
+                    <label class="block mb-2 text-lg font-medium text-indigo-100" for="message">
+                        Message
+                    </label>
+                    <textarea class="w-full px-4 py-3 rounded-xl bg-white/10 border-2 border-indigo-300/30 text-white placeholder-indigo-200/70 focus:outline-none focus:border-indigo-300 focus:bg-white/20 focus:ring-0 transition-all duration-300 group-hover:border-indigo-300/50 resize-none"
+                              id="message"
+                              name="message"
+                              placeholder="Write your message here..."
+                              required
+                              rows="6"
+                              minlength="10"
+                              maxlength="1000"></textarea>
+                    <div class="text-red-300 text-sm mt-1 hidden" id="messageError"></div>
+                </div>
+
+                <div id="success-message" class="hidden bg-emerald-500/20 backdrop-blur-sm text-emerald-200 p-4 rounded-xl border border-emerald-400/30">
+                    Message sent successfully! I'll get back to you soon.
+                </div>
+
+                <div id="error-message" class="hidden bg-rose-500/20 backdrop-blur-sm text-rose-200 p-4 rounded-xl border border-rose-400/30">
+                    Failed to send message. Please try again.
+                </div>
+                
+                <button class="w-full bg-gradient-to-r from-indigo-400 to-indigo-300 hover:from-indigo-300 hover:to-indigo-200 text-indigo-900 font-semibold py-4 rounded-xl transition-all duration-300 flex items-center justify-center space-x-2 focus:outline-none focus:ring-2 focus:ring-indigo-300 focus:ring-offset-2 focus:ring-offset-indigo-900 shadow-lg hover:shadow-indigo-300/25"
+                        type="submit"
+                        id="submitButton">
+                    <i class="far fa-paper-plane"></i>
+                    <span>Send Message</span>
+                </button>
+            </form>
+        </div>
+    </div>
+  </section>
+  <!-- Footer -->
+  <footer class="bg-indigo-900 text-indigo-300 py-8">
+   <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center text-sm">
+    <p>
+     © 2024 Muhammad Talha. All rights reserved.
+    </p>
+    <div class="flex space-x-6 mt-4 md:mt-0 text-xl">
+     <a aria-label="LinkedIn" class="hover:text-indigo-400 transition" href="https://www.linkedin.com/in/muhammad-talha-57011b19a" target="_blank" rel="noopener noreferrer">
+      <i class="fab fa-linkedin">
+      </i>
+     </a>
+     <a aria-label="Email" class="hover:text-indigo-400 transition" href="mailto:talharasheed088@gmail.com">
+      <i class="fas fa-envelope">
+      </i>
+     </a>
+     <a aria-label="Phone" class="hover:text-indigo-400 transition" href="tel:+923256560861">
+      <i class="fas fa-phone-alt">
+      </i>
+     </a>
+    </div>
+   </div>
+  </footer>
+  <script>
+    const menuBtn = document.getElementById("menu-btn");
+    const mobileMenu = document.getElementById("mobile-menu");
+
+    menuBtn.addEventListener("click", () => {
+      mobileMenu.classList.toggle("hidden");
+    });
+
+    mobileMenu.querySelectorAll("a").forEach((link) => {
+      link.addEventListener("click", () => {
+        mobileMenu.classList.add("hidden");
+      });
+    });
+
+    // Smooth scrolling for navigation links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
+
+    // Enhanced form handling
+    const contactForm = document.getElementById('contactForm');
+    const successMessage = document.getElementById('success-message');
+    const errorMessage = document.getElementById('error-message');
+    const submitButton = document.getElementById('submitButton');
+    const originalButtonText = submitButton.innerHTML;
+
+    // Real-time validation
+    const inputs = {
+        name: {
+            element: document.getElementById('name'),
+            error: document.getElementById('nameError'),
+            validate: (value) => {
+                if (value.length < 2) return "Name must be at least 2 characters long";
+                if (!/^[A-Za-z ]{2,50}$/.test(value)) return "Please enter a valid name (letters only)";
+                return "";
+            }
+        },
+        email: {
+            element: document.getElementById('email'),
+            error: document.getElementById('emailError'),
+            validate: (value) => {
+                if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value)) return "Please enter a valid email address";
+                return "";
+            }
+        },
+        message: {
+            element: document.getElementById('message'),
+            error: document.getElementById('messageError'),
+            validate: (value) => {
+                if (value.length < 10) return "Message must be at least 10 characters long";
+                if (value.length > 1000) return "Message must not exceed 1000 characters";
+                return "";
+            }
+        }
+    };
+
+    // Add real-time validation to each input
+    Object.keys(inputs).forEach(key => {
+        const input = inputs[key];
+        input.element.addEventListener('input', () => {
+            const error = input.validate(input.element.value);
+            input.error.textContent = error;
+            input.error.classList.toggle('hidden', !error);
+            input.element.classList.toggle('border-red-500', !!error);
+        });
+    });
+
+    contactForm.addEventListener('submit', async function(e) {
+        e.preventDefault();
+        
+        // Validate all fields before submission
+        let hasErrors = false;
+        Object.keys(inputs).forEach(key => {
+            const input = inputs[key];
+            const error = input.validate(input.element.value);
+            input.error.textContent = error;
+            input.error.classList.toggle('hidden', !error);
+            input.element.classList.toggle('border-red-500', !!error);
+            if (error) hasErrors = true;
+        });
+
+        if (hasErrors) return;
+
+        // Show loading state
+        submitButton.disabled = true;
+        submitButton.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+        successMessage.classList.add('hidden');
+        errorMessage.classList.add('hidden');
+
+        try {
+            const formData = new FormData(contactForm);
+            const response = await fetch('https://api.web3forms.com/submit', {
+                method: 'POST',
+                body: formData
+            });
+
+            const data = await response.json();
+
+            if (data.success) {
+                // Show success message
+                successMessage.classList.remove('hidden');
+                contactForm.reset();
+                submitButton.innerHTML = '<i class="fas fa-check"></i> Message Sent!';
+                submitButton.classList.remove('bg-[#6366F1]', 'hover:bg-[#4F46E5]');
+                submitButton.classList.add('bg-green-500', 'hover:bg-green-600');
+            } else {
+                throw new Error(data.message || 'Something went wrong!');
+            }
+        } catch (error) {
+            console.error('Error:', error);
+            // Show error message
+            errorMessage.textContent = error.message || 'Failed to send message. Please try again.';
+            errorMessage.classList.remove('hidden');
+            submitButton.innerHTML = '<i class="fas fa-exclamation-circle"></i> Error! Try Again';
+            submitButton.classList.remove('bg-[#6366F1]', 'hover:bg-[#4F46E5]');
+            submitButton.classList.add('bg-red-500', 'hover:bg-red-600');
+        }
+
+        // Reset button after delay
+        setTimeout(() => {
+            submitButton.disabled = false;
+            submitButton.innerHTML = originalButtonText;
+            submitButton.classList.remove('bg-green-500', 'hover:bg-green-600', 'bg-red-500', 'hover:bg-red-600');
+            submitButton.classList.add('bg-[#6366F1]', 'hover:bg-[#4F46E5]');
+        }, 3000);
+    });
+  </script>
+ </body>
+</html>

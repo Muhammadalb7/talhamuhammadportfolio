@@ -1,0 +1,21 @@
+# System files
+.DS_Store
+Thumbs.db
+
+# Editor directories and files
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Node modules
+node_modules/
+
+# Environment files
+.env
+.env.local
+.vercel
+*.log
+
+# Node modules
+node_modules/ 
